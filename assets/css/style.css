@@ -1,0 +1,47 @@
+/* ----------------------------- */
+/* HTML ELEMENTS */
+/* ----------------------------- */
+
+h1, h2, h3, ul {
+    text-align: center;
+}
+
+h2.sectionHeading:before {
+    left: 0;
+}
+
+h2.sectionHeading {
+    position: relative;
+}
+
+h2.sectionHeading:after {
+    right: 0;
+}
+
+h2.sectionHeading:before, h2.sectionHeading:after {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30%;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.25);
+    content: ""
+}
+
+li {
+    display: inline;
+}
+
+/* ----------------------------- */
+/* CLASSES  */
+/* ----------------------------- */
+
+
+.seperator {
+    border-top: 5px solid rgba(255, 255, 255, 0.75);
+    width: 30%;
+}
+
+
+/* ----------------------------- */
+/* IDS */
+/* ----------------------------- */
