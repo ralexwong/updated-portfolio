@@ -43,7 +43,7 @@
 
 <div id="content">
 
-    <div id="header">
+    <!-- <div id="header">
         <div class="container">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -53,7 +53,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>  
-    </div>
+    </div> -->
 
     <section id="main">
         <div class="container">
@@ -63,14 +63,41 @@
                 <hr class="seperator">
                 <a class="contactMe" href=""><button type="button" class="btn btn-primary">CONTACT ME</button></a>
                 <div class="contactInfo">
-                    <i class="fas fa-envelope"></i>
-                    <i class="fas fa-file"><a href=""></a></i>
-                    <i class="fab fa-github"><a href=""></a></i>
-                    <i class="fab fa-linkedin"><a href=""></a></i>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i></li>
+                        <li><i class="fas fa-file"><a href="" alt="resume"></a></i></li>
+                        <li><i class="fab fa-github"><a href=""></a></i></li>
+                        <li><i class="fab fa-linkedin"><a href=""></a></i></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#main"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <section id="about">
         <div class="container">
@@ -79,34 +106,45 @@
 
             <hr class="seperator">
 
-            <div class="column">
-                <div>
-                    <p id="progressTitle">Skills</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progressTag">HTML</div>
+            <div class="row">
+
+                <div class="col-4">
+                    <div>
+                        <p class="progressTitle">That me!</p>
                     </div>
-                    <span class="progressPercentage">75%</span>    
+                    <img id="profilePic" src="assets/images/new-profile-pic.jpg" alt="profile-pic">
                 </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progressTag">CSS</div>
+
+                <div class="col-8">
+                    <div>
+                        <p class="progressTitle">Skills</p>
                     </div>
-                    <span class="progressPercentage">60%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progressTag">Javascript</div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progressTag">HTML</div>
+                        </div>
+                        <span class="progressPercentage">75%</span>    
                     </div>
-                    <span class="progressPercentage">50%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progressTag">Node.JS</div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progressTag">CSS</div>
+                        </div>
+                        <span class="progressPercentage">60%</span>
                     </div>
-                    <span class="progressPercentage">50%</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progressTag">Javascript</div>
+                        </div>
+                        <span class="progressPercentage">50%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progressTag">Node.JS</div>
+                        </div>
+                        <span class="progressPercentage">50%</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -117,9 +155,12 @@
             <p class="sectionText">I am creating projects and applications every week at the UW bootcamp. Here are some examples!</p>
             <div class="row">
                 <div class="col-4">
+                    <div>
+                        <p class="cardTitle">Trivia Game</p>
+                    </div>
                     <div class="card">
                         <a href="https://ralexwong.github.io/triviagame2/">
-                            <img class="cardImage" src="assets/images/spiderman.jpg" class="card-img-top" alt="spiderman.jpg">
+                            <img src="assets/images/spiderman.jpg" class="card-img-top" alt="spiderman.jpg">
                             <div class="card-body">
                                 <p class="cardText">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
@@ -127,9 +168,12 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card">
+                    <div>
+                        <p class="cardTitle">Meal Prep</p>
+                    </div> 
+                    <div class="card">                   
                         <a href="https://ralexwong.github.io/meal-planner/intro.html">
-                            <img class="cardImage" src="assets/images/meal-planner.jpg" class="card-img-top" alt="meal-planner.jpg">
+                            <img src="assets/images/meal-planner.jpg" class="card-img-top" alt="meal-planner.jpg">
                             <div class="card-body">
                                 <p class="cardText">Meal planning app to help those who want to schedule meals ahead of time</p>
                             </div>
@@ -137,9 +181,12 @@
                     </div>
                 </div>
                 <div class="col-4">
+                    <div>
+                        <p class="cardTitle">Star Wars RPG</p>
+                    </div>
                     <div class="card">
                         <a href="https://ralexwong.github.io/star-wars-game/">
-                            <img class="cardImage" src="assets/images/boba.jpg" class="card-img-top" alt="boba.jpg">
+                            <img src="assets/images/boba.jpg" class="card-img-top" alt="boba.jpg">
                             <div class="card-body">
                                 <p class="cardText">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
@@ -185,13 +232,15 @@
         <div class="container">
             <h2 class="sectionHeading">THANKS!</h2>
             <p class="footerText">Want to chat about something?</p>
-            <p class="footerText"><a class="contactMe">CONTACT ME</a></p>
+            <p class="footerText"><span><i class="fas fa-envelope"></i></span><a class="contactMe">CONTACT ME</a></p>
             <p class="footerText">Email: alexhwong@hotmail.com</p>
             <p class="footerText">Phone Number: (206)-501-0909</p>
             <div class="iconDiv">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-facebook-square"></i>
+                <ul>
+                    <li><i class="fab fa-linkedin"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                </ul>
             </div>
         </div>
     </section>
