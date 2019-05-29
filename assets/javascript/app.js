@@ -7,7 +7,7 @@ $(document).ready(function () {
     var header = $("#stickyNav");
 
     // Get the offset position of the navbar
-    var sticky = header.offsetTop;
+    var sticky = header.offsetBottom;
 
     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
@@ -23,14 +23,15 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         if (window.innerWidth < 426) {
-            $("#introImage").hide();
-
+            $(".mobileAbout").show();
+            $("#siteAbout").hide();
         }
     });
 
     $(window).resize(function () {
         if (window.innerWidth > 426) {
-            $("#introImage").show();
+            $(".mobileAbout").hide();
+            $("#siteAbout").show();
 
         }
     });

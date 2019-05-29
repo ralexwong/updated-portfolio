@@ -47,7 +47,7 @@ h2.sectionHeading:before, h2.sectionHeading:after {
 
 i {
     align-content: center;
-    font-size: 50px;
+    font-size: 80px;
     max-width: 100%;
 }
 
@@ -61,7 +61,7 @@ p {
 }
 
 section {
-    padding: 150px 0 150px 0;
+    padding: 150px 0 100px 0;
 }
 
 /* ----------------------------- */
@@ -122,8 +122,7 @@ section {
 }
 
 .navbar-nav {
-    margin: 0 auto;
-    width: 30%;
+    align-content: center;
 }
 
 .progressTitle {
@@ -204,7 +203,7 @@ section {
 }
 
 #navbarNav {
-    /* position: relative; */
+    align-content: center;
 
 }
 
@@ -261,6 +260,14 @@ section {
     h4 {
         font-size: 45px;
         margin: 80px 0 10px 0;
+    }
+
+    i {
+        font-size: 40px;
+    }
+
+    #profilePic {
+        max-width: 350px; 
     }
 
     .progressTitle {
