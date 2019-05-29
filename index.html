@@ -43,28 +43,15 @@
 
 <div id="content">
 
-    <!-- <div id="header">
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li class="list-item-logo"><a href="#main"></a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>  
-    </div> -->
-
     <section id="main">
         <div class="container">
-            <div>
-                <h2>ALEX WONG</h2>
-                <h1>FULL STACK WEB DEVELOPER</h1>
+            <div id="">
+                <h4>ALEX WONG</h2>
+                <h3>FULL STACK WEB DEVELOPER</h1>
                 <hr class="seperator">
-                <a class="contactMe" href=""><button type="button" class="btn btn-primary">CONTACT ME</button></a>
+                <a class="contactMe"><span><i class="fas fa-envelope"></i></span>CONTACT ME</a>
                 <div class="contactInfo">
                     <ul>
-                        <li><i class="fas fa-envelope"></i></li>
                         <li><i class="fas fa-file"><a href="" alt="resume"></a></i></li>
                         <li><i class="fab fa-github"><a href=""></a></i></li>
                         <li><i class="fab fa-linkedin"><a href=""></a></i></li>
@@ -74,7 +61,7 @@
         </div>
     </section>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="stickyNav" class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -104,7 +91,7 @@
             <h2 class="sectionHeading">ABOUT ALEX</h2>
             <p class="sectionText">I enjoy helping others out, whether through developing code, improving UI/UX, or giving advice! I especially love increasing efficiency and making things run smoother. In my free time, I enjoy playing guitar or drums and going to concerts.</p>
 
-            <hr class="seperator">
+            <!-- <hr class="seperator"> -->
 
             <div class="row">
 
@@ -153,49 +140,37 @@
         <div class="container">
             <h2 class="sectionHeading">PROJECTS</h2>
             <p class="sectionText">I am creating projects and applications every week at the UW bootcamp. Here are some examples!</p>
-            <div class="row">
-                <div class="col-4">
-                    <div>
-                        <p class="cardTitle">Trivia Game</p>
-                    </div>
-                    <div class="card">
-                        <a href="https://ralexwong.github.io/triviagame2/">
-                            <img src="assets/images/spiderman.jpg" class="card-img-top" alt="spiderman.jpg">
-                            <div class="card-body">
-                                <p class="cardText">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </a>
-                    </div>
+            <div class="card-deck">
+                <div class="card">
+                    <a href="https://ralexwong.github.io/triviagame2/">
+                        <img src="assets/images/spiderman.jpg" class="card-img-top" alt="spiderman.jpg">                
+                        <div class="card-body">
+                            <h5 class="card-title">Trivia Game</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-4">
-                    <div>
-                        <p class="cardTitle">Meal Prep</p>
-                    </div> 
-                    <div class="card">                   
-                        <a href="https://ralexwong.github.io/meal-planner/intro.html">
-                            <img src="assets/images/meal-planner.jpg" class="card-img-top" alt="meal-planner.jpg">
-                            <div class="card-body">
-                                <p class="cardText">Meal planning app to help those who want to schedule meals ahead of time</p>
-                            </div>
-                        </a>
-                    </div>
+                <div class="card">
+                    <a href="https://ralexwong.github.io/meal-planner/intro.html">
+                        <img src="assets/images/meal-planner.jpg" class="card-img-top" alt="meal-planner.jpg">                
+                        <div class="card-body">
+                            <h5 class="card-title">Meal Planner</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-4">
-                    <div>
-                        <p class="cardTitle">Star Wars RPG</p>
-                    </div>
-                    <div class="card">
+                <div class="card">
                         <a href="https://ralexwong.github.io/star-wars-game/">
-                            <img src="assets/images/boba.jpg" class="card-img-top" alt="boba.jpg">
+                            <img src="assets/images/boba.jpg" class="card-img-top" alt="boba.jpg">                
                             <div class="card-body">
-                                <p class="cardText">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title">Star Wars RPG</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="blog">
@@ -228,11 +203,11 @@
         </div>
     </section>
 
-    <section id="footer">
+    <section id="footer"    >
         <div class="container">
             <h2 class="sectionHeading">THANKS!</h2>
             <p class="footerText">Want to chat about something?</p>
-            <p class="footerText"><span><i class="fas fa-envelope"></i></span><a class="contactMe">CONTACT ME</a></p>
+            <a class="contactMe"><span><i class="fas fa-envelope"></i></span>CONTACT ME</a>
             <p class="footerText">Email: alexhwong@hotmail.com</p>
             <p class="footerText">Phone Number: (206)-501-0909</p>
             <div class="iconDiv">
@@ -256,10 +231,6 @@
 
 </body>
 
-<script>
+<script src="assets/javascript/app.js"></script>
 
-
-
-
-</script>
 </html>

@@ -7,13 +7,17 @@ body {
     height: 100%;
 }
 
-h1 {
+h2 {
+    font-size: 55px;
+}
+
+h3 {
     font-size: 35px;
     font-weight: 400;
 }
 
-h2 {
-    font-size: 55px;
+h4 {
+    font-size: 65px;
 }
 
 h1, h2, h3, ul {
@@ -64,12 +68,18 @@ section {
 /* CLASSES  */
 /* ----------------------------- */
 
-/* .card {
-    max-height: 250px;
-    max-width: 250px;
+.card {
+    max-height: 100%;
+    max-width: 100%;
 }
 
-.cardImage {
+.card-img-top {
+    height: 75vh;
+    object-fit: cover;
+    width: 100%
+}
+
+/* .cardImage {
     max-height: 15vw;
     width:20vw;
 }
@@ -89,7 +99,17 @@ section {
 }
 
 .contactMe {
-    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+    padding: 5px 40px 5px 40px;
+    display: inline-block;
+}
+
+.fa-envelope {
+    font-size: 1rem;
+    margin-right: 5px;
 }
 
 .footerText {
@@ -102,11 +122,8 @@ section {
 }
 
 .navbar-nav {
-    align-items: center;
-    color: black;
-    display: flex;
-    width:500px;
     margin: 0 auto;
+    width: 30%;
 }
 
 .progressTitle {
@@ -143,6 +160,12 @@ section {
     width: 30%;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
 
 /* ----------------------------- */
 /* IDS */
@@ -163,6 +186,7 @@ section {
 
 #footer {
     background: rgba(0, 0, 0, 0.753);
+    text-align: center;
 }
 
 #header {
@@ -175,6 +199,13 @@ section {
 
 #main {
     background-color: rgba(233, 189, 107, 0.712);
+    text-align: center;
+
+}
+
+#navbarNav {
+    /* position: relative; */
+
 }
 
 #profilePic {
@@ -214,16 +245,31 @@ section {
 @media (max-width: 426px) {
 
     h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     h2.sectionHeading:before, h2.sectionHeading:after {
-        position: absolute;
-        top: 50%;
-        display: block;
         width: 25%;
-        border-bottom: 5px solid rgba(0, 0, 0, 0.25);
-        content: ""
+
+    }
+
+    h3 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 45px;
+        margin: 80px 0 10px 0;
+    }
+
+    .progressTitle {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+    }
+
+    section {
+        padding: 50px 0 50px 0;
     }
 
     .sectionText {
