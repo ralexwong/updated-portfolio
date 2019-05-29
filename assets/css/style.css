@@ -64,6 +64,10 @@ section {
     padding: 150px 0 100px 0;
 }
 
+ul {
+    margin-top: 20px;
+}
+
 /* ----------------------------- */
 /* CLASSES  */
 /* ----------------------------- */
@@ -74,7 +78,7 @@ section {
 }
 
 .card-img-top {
-    height: 75vh;
+    height: 250px;
     object-fit: cover;
     width: 100%
 }
@@ -102,7 +106,7 @@ section {
     border: 1px solid white;
     border-radius: 10px;
     font-size: 20px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
     padding: 5px 40px 5px 40px;
     display: inline-block;
 }
@@ -123,6 +127,8 @@ section {
 
 .navbar-nav {
     align-content: center;
+    margin: 0 auto;
+    width:27%;
 }
 
 .progressTitle {
@@ -197,7 +203,7 @@ section {
 }
 
 #main {
-    background-color: rgba(233, 189, 107, 0.712);
+    background-color: rgba(5, 4, 3, 0.712);
     text-align: center;
 
 }
