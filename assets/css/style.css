@@ -2,6 +2,10 @@
 /* HTML ELEMENTS */
 /* ----------------------------- */
 
+a {
+    color: white;
+}
+
 body {
     color:rgb(255, 255, 255);
     height: 100%;
@@ -73,11 +77,18 @@ ul {
 /* ----------------------------- */
 
 .card {
+    border-radius: 10px;
     max-height: 100%;
     max-width: 100%;
 }
 
+.card-body {
+    color: black;
+}
+
 .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     height: 250px;
     object-fit: cover;
     width: 100%
@@ -128,7 +139,37 @@ ul {
 .navbar-nav {
     align-content: center;
     margin: 0 auto;
-    width:27%;
+    width:31%;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.nav-link .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.nav-link:hover .tooltip {
+    visibility: visible;
 }
 
 .progressTitle {
@@ -202,6 +243,12 @@ ul {
     z-index: 11;
 }
 
+#logo {
+    display: inline-block;
+    height: 52px;
+    width: 52px;
+}
+
 #main {
     background-color: rgba(5, 4, 3, 0.712);
     text-align: center;
@@ -221,6 +268,10 @@ ul {
 
 #projects {
     background: rgba(243, 51, 51, 0.527);
+}
+
+#stickyNav {
+    background: black;
 }
 
 
