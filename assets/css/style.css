@@ -155,7 +155,8 @@ ul {
     border-bottom: 1px dotted black;
   }
 
-/* Tooltip text */
+
+/* Tooltip text */               /* help */                    
 .nav-link .tooltip {
     visibility: hidden;
     width: 120px;
