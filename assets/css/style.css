@@ -146,37 +146,6 @@ ul {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-
-.nav-link {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
-
-
-/* Tooltip text */               /* help */                    
-.nav-link .tooltip {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 11;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.nav-link:hover .tooltip {
-    visibility: visible;
 }
 
 .progressTitle {
@@ -259,7 +228,6 @@ ul {
 #main {
     background-color: rgba(5, 4, 3, 0.712);
     text-align: center;
-
 }
 
 #navbarNav {
