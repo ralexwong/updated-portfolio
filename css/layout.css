@@ -208,7 +208,7 @@ ul#nav li.current a { color: #F06000; }
 #about .profile-pic {
    position: relative;
    width: 200px;
-   height: 275px;
+   height: 300px;
    border-radius: 30%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -837,7 +837,7 @@ call-to-action .button {
    color: #EBEEEE;
 	display: inline-block;
 	float: left;
-   width: 26%;
+   width: 100%;
 }
 #contact input,
 #contact textarea,
@@ -850,7 +850,7 @@ call-to-action .button {
 	outline: none;
    font-size: 15px;
    line-height: 24px;
-   width: 65%;
+   width: 100%;
 }
 #contact input:focus,
 #contact textarea:focus,
@@ -869,6 +869,7 @@ call-to-action .button {
    display: inline-block;
 	border-radius: 3px;
    margin-left: 26%;
+   float: right;
 }
 #contact button.submit:hover {
 	color: #0D0D0D;

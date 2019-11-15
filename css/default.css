@@ -58,6 +58,12 @@ time, mark, audio, video {
    background: transparent;
 }
 
+.icon {
+   width: 40px;
+   height: 40px
+}
+
+
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
    display: block;
@@ -561,7 +567,7 @@ textarea:focus {
 	background-color: #3d4145;
 }
 
-textarea { min-height: 220px; }
+textarea { min-height: 100px; }
 
 label,
 legend {
@@ -641,7 +647,7 @@ input[type="checkbox"] { display: inline; }
 .row .five        { width: 41.66667%; }
 .row .six         { width: 50%; }
 .row .seven       { width: 58.33333%; }
-.row .eight       { width: 66.66667%; }
+.row .eight       { width: 99%; }
 .row .nine        { width: 75%; }
 .row .ten         { width: 83.33333%; }
 .row .eleven      { width: 91.66667%; }
@@ -801,7 +807,3 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-
-
-
-
